@@ -64,7 +64,7 @@ export default class Drum extends Component {
   render() {
     return (
       <div className="drum">
-        {this.state.drumPadParameters.map(drumPad => <DrumPad keyTrigger={drumPad.keyTrigger}/>)}
+        {this.state.drumPadParameters.map(drumPad => <DrumPad keyTrigger={drumPad.keyTrigger} padId={drumPad.id} clipUrl={drumPad.url} keyCode={drumPad.keyCode} key={drumPad.keyCode} />)}
       </div>
     )
   }

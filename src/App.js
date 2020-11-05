@@ -5,7 +5,7 @@ function App() {
   return (
     <div id="drum-machine">
       <Drum />
-      <div id="display">Heater 1</div>
+      <div id="display"></div>
     </div>
   );
 }
